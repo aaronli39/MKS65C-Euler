@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 int main() {
-  long sumOfSquares = 0;
-  long sum;
-
+  unsigned long sumSq = 0;
+  unsigned long sum = 0;
   int i;
-  for (i = 1; i <= 100; i++) {
-    sumOfSquares += i * i;
-    sum += i;
-  }
-  long squareOfSums = sum * sum;
 
-  printf("sum of squares: %li\nsquare of sums: %li\ndifference: abs(%li)\n", sumOfSquares, squareOfSums, (sumOfSquares - squareOfSums));
+  for (i = 1; i <= 100; i++) {
+    sumSq += (i * i);
+    sum += i;
+} unsigned long sqSum = sum * sum;
+  printf("Sum of squares: %lu\nSquare of sums: %lu\ndifference: abs(%lu)\n", sumSq, sqSum, (sumSq - sqSum));
   return 0;
 }
